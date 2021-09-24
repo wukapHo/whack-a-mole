@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <title>Whack A Mole!</title>
+</head>
+<body>
+    <h1 class="title">Whack-a-mole!</h1>
+    <div class="game-panel">
+        <button class="start">Start</button>
+        <button class="reset">Reset</button>
+        <button class="stop">Pause</button>
+        <div class="level">Level: <span id="level"></span></div>
+        <div class="win" id="win"></div>
+        <div class="score">Score: <span id="score"></span></div>
+    </div>
+    <div class="game">
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+        <div class="hole">
+            <div class="mole"></div>
+        </div>
+    </div>
+    <audio src="./assets/audio/start-game.mp3"></audio>
+    <audio src="./assets/audio/bonk.mp3"></audio>
+    <audio src="./assets/audio/click.mp3"></audio>
+    <audio src="./assets/audio/end-game.mp3"></audio>
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="https://github.com/wukapHo" class="github" target="_blank" rel="noopener noreferrer">Vyacheslav Likashkov</a>
+            <a href="https://rs.school/js/" class="rss" target="_blank" rel="noopener noreferrer">
+                <span class="rss-year">'21</span>
+            </a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
